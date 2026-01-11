@@ -39,7 +39,9 @@ send(request, verbose=0)
 
 start_time = time()
 
-send(response, iface="eth0", verbose=0)
+# doesn't send packets
+# sendp(response, iface="eth0", verbose=0)
+send(response, verbose=0)
 
 print("Sent attack in", round(time()-start_time, 4))
 
