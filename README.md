@@ -2,7 +2,6 @@ DNS Cache Poisoning Proof of Concept
 ===============================
 
 PoC for a DNS Cache Poisoning Attack within an isolated network environment using docker. A mock DNS cache server forwards all request to the _upstream dns_, which in turn forwards to a real dns server and adds a 1.5 second delay.
-![alt text](imgs/topology.png)
 ## Quickstart
 
 ### Prerequisities
@@ -54,6 +53,7 @@ It shows that in the answer section, the record is pointing to the adversary's I
 
 ![](imgs/logs.png)
 ## Debriefing
+![alt text](imgs/topology.png)
 
 ### Project Architecture
 
